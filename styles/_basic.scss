@@ -33,6 +33,9 @@ article, aside, footer, header, nav, section {
 
 pre {
   font-size: 16px;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: pre-wrap;
 
   code.hljs {
     border-radius: 6px;
