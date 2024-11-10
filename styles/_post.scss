@@ -1,3 +1,6 @@
+@use "variables";
+@use "common";
+
 .post-content {
   max-width: 760px;
   width: 100%;
@@ -32,18 +35,18 @@
 .post-content-tags {
   display: flex;
   align-items: center;
-  border-top: 1px solid rgba($color-main-dark, .15);
+  border-top: 1px solid rgba(variables.$color-main-dark, .15);
   margin-top: 20px;
   padding-top: 20px;
 }
 
 .post-content-tag {
-  border: 1px solid rgba($color-main-dark, .15);
+  border: 1px solid rgba(variables.$color-main-dark, .15);
   padding: 0 15px;
   font-size: 13px;
   font-weight: 300;
   margin-right: 10px;
-  color: rgba($color-main-dark, .8);
+  color: rgba(variables.$color-main-dark, .8);
   border-radius: 3px;
 }
 
@@ -66,7 +69,7 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   margin: 10px;
   width: calc(33% - 20px);
-  background-color: $color-main-light;
+  background-color: variables.$color-main-light;
   border-radius: 5px;
 
   @media (max-width: 1200px) {
@@ -96,12 +99,12 @@
 .post-list-items--title {
   font-size: 30px;
   font-weight: 900;
-  font-family: $font-family-main;
+  font-family: variables.$font-family-main;
   padding: 0 25px;
 
   a {
     text-decoration: none;
-    color: $color-main-dark;
+    color: variables.$color-main-dark;
   }
 }
 
@@ -111,10 +114,10 @@
 }
 
 .post-list-items--tags {
-  color: $color-main-contrast;
+  color: variables.$color-main-contrast;
   font-size: 13px;
   font-weight: 300;
-  font-family: $font-family-main;
+  font-family: variables.$font-family-main;
   padding: 0 25px;
 }
 
@@ -144,7 +147,7 @@
   border-radius: 0;
   border-bottom-right-radius: 5px;
   background-color: transparent;
-  color: $color-main-dark;
+  color: variables.$color-main-dark;
 
   &:hover {
     background-color: transparent;
